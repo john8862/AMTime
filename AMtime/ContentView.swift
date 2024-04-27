@@ -71,7 +71,13 @@ struct ContentView: View {
     }
 
     fileprivate func createCollectionView() -> MovieCollectionView {
-        return MovieCollectionView(allItems: model.allItems, didSelectItem: { _ in }, seeAllforSection: { _ in })
+        return MovieCollectionView(allItems: model.allItems,
+                                   didSelectItem: { _ in },
+                                   seeAllforSection: { section in
+                                       self.section = section
+                                       self.showSheet.toggle()
+                                       self.selectedIndex = nil
+                                   })
     }
 }
 
