@@ -103,6 +103,22 @@
 		CA6FEEC12BDD2E2F00D696DB /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEC02BDD2E2F00D696DB /* DateView.swift */; };
 		CA6FEEC32BDD2E5500D696DB /* DateShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEC22BDD2E5500D696DB /* DateShape.swift */; };
 		CA6FEEC52BDD2EB100D696DB /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEC42BDD2EB100D696DB /* TimeView.swift */; };
+		CA6FEEC72BDD36E900D696DB /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEC62BDD36E900D696DB /* BasketView.swift */; };
+		CA6FEEC92BDD370700D696DB /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEC82BDD370700D696DB /* Ticket.swift */; };
+		CA6FEECB2BDD373300D696DB /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEECA2BDD373300D696DB /* TicketView.swift */; };
+		CA6FEECD2BDD376100D696DB /* TopTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEECC2BDD376100D696DB /* TopTicketView.swift */; };
+		CA6FEECF2BDD376E00D696DB /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEECE2BDD376E00D696DB /* TicketDetailView.swift */; };
+		CA6FEED12BDD377900D696DB /* BottomTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEED02BDD377900D696DB /* BottomTicketView.swift */; };
+		CA6FEED32BDD378900D696DB /* DashedSeperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEED22BDD378900D696DB /* DashedSeperator.swift */; };
+		CA6FEED52BDD379600D696DB /* TicketShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEED42BDD379600D696DB /* TicketShape.swift */; };
+		CA6FEED72BDD396600D696DB /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEED62BDD396600D696DB /* PaymentView.swift */; };
+		CA6FEED92BDD39A400D696DB /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEED82BDD39A400D696DB /* PaymentMethod.swift */; };
+		CA6FEEDB2BDD3A1700D696DB /* LCTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEDA2BDD3A1700D696DB /* LCTextfield.swift */; };
+		CA6FEEDD2BDD3B3B00D696DB /* OkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEDC2BDD3B3B00D696DB /* OkView.swift */; };
+		CA6FEEDF2BDD3B4B00D696DB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEDE2BDD3B4B00D696DB /* LoadingView.swift */; };
+		CA6FEEE12BDD3B6C00D696DB /* OkShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEE02BDD3B6C00D696DB /* OkShape.swift */; };
+		CA6FEEE32BDD3C7F00D696DB /* AnyTransitionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEE22BDD3C7F00D696DB /* AnyTransitionExt.swift */; };
+		CA6FEEE52BDD3D8500D696DB /* NotificationCenterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEE42BDD3D8500D696DB /* NotificationCenterExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +238,22 @@
 		CA6FEEC02BDD2E2F00D696DB /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 		CA6FEEC22BDD2E5500D696DB /* DateShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateShape.swift; sourceTree = "<group>"; };
 		CA6FEEC42BDD2EB100D696DB /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		CA6FEEC62BDD36E900D696DB /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		CA6FEEC82BDD370700D696DB /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		CA6FEECA2BDD373300D696DB /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		CA6FEECC2BDD376100D696DB /* TopTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTicketView.swift; sourceTree = "<group>"; };
+		CA6FEECE2BDD376E00D696DB /* TicketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailView.swift; sourceTree = "<group>"; };
+		CA6FEED02BDD377900D696DB /* BottomTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTicketView.swift; sourceTree = "<group>"; };
+		CA6FEED22BDD378900D696DB /* DashedSeperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedSeperator.swift; sourceTree = "<group>"; };
+		CA6FEED42BDD379600D696DB /* TicketShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketShape.swift; sourceTree = "<group>"; };
+		CA6FEED62BDD396600D696DB /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		CA6FEED82BDD39A400D696DB /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		CA6FEEDA2BDD3A1700D696DB /* LCTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCTextfield.swift; sourceTree = "<group>"; };
+		CA6FEEDC2BDD3B3B00D696DB /* OkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkView.swift; sourceTree = "<group>"; };
+		CA6FEEDE2BDD3B4B00D696DB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CA6FEEE02BDD3B6C00D696DB /* OkShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkShape.swift; sourceTree = "<group>"; };
+		CA6FEEE22BDD3C7F00D696DB /* AnyTransitionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExt.swift; sourceTree = "<group>"; };
+		CA6FEEE42BDD3D8500D696DB /* NotificationCenterExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +351,8 @@
 			children = (
 				CA6FEE082BDD225600D696DB /* ColorExt.swift */,
 				CA6FEEBE2BDD2DF100D696DB /* DateExt.swift */,
+				CA6FEEE22BDD3C7F00D696DB /* AnyTransitionExt.swift */,
+				CA6FEEE42BDD3D8500D696DB /* NotificationCenterExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -402,6 +436,8 @@
 				CA6FEE872BDD23C900D696DB /* ModelBundle.swift */,
 				CA6FEEAF2BDD2B8E00D696DB /* Seat.swift */,
 				CA6FEEBA2BDD2D0300D696DB /* TicketDate.swift */,
+				CA6FEEC82BDD370700D696DB /* Ticket.swift */,
+				CA6FEED82BDD39A400D696DB /* PaymentMethod.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -435,6 +471,8 @@
 				CA6FEEA52BDD277F00D696DB /* MovieListView.swift */,
 				CA6FEEA92BDD27BB00D696DB /* ActorListView.swift */,
 				CA6FEEB82BDD2CD700D696DB /* SeatsChoiceView.swift */,
+				CA6FEEC62BDD36E900D696DB /* BasketView.swift */,
+				CA6FEED62BDD396600D696DB /* PaymentView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -453,6 +491,13 @@
 				CA6FEEBC2BDD2DC900D696DB /* DateTimeView.swift */,
 				CA6FEEC02BDD2E2F00D696DB /* DateView.swift */,
 				CA6FEEC42BDD2EB100D696DB /* TimeView.swift */,
+				CA6FEECA2BDD373300D696DB /* TicketView.swift */,
+				CA6FEECC2BDD376100D696DB /* TopTicketView.swift */,
+				CA6FEECE2BDD376E00D696DB /* TicketDetailView.swift */,
+				CA6FEED02BDD377900D696DB /* BottomTicketView.swift */,
+				CA6FEEDA2BDD3A1700D696DB /* LCTextfield.swift */,
+				CA6FEEDC2BDD3B3B00D696DB /* OkView.swift */,
+				CA6FEEDE2BDD3B4B00D696DB /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,6 +507,9 @@
 			children = (
 				CA6FEEB22BDD2BA300D696DB /* ScreenShape.swift */,
 				CA6FEEC22BDD2E5500D696DB /* DateShape.swift */,
+				CA6FEED22BDD378900D696DB /* DashedSeperator.swift */,
+				CA6FEED42BDD379600D696DB /* TicketShape.swift */,
+				CA6FEEE02BDD3B6C00D696DB /* OkShape.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -655,21 +703,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6FEECD2BDD376100D696DB /* TopTicketView.swift in Sources */,
+				CA6FEEDB2BDD3A1700D696DB /* LCTextfield.swift in Sources */,
+				CA6FEEC72BDD36E900D696DB /* BasketView.swift in Sources */,
 				CA6FEEC12BDD2E2F00D696DB /* DateView.swift in Sources */,
+				CA6FEED92BDD39A400D696DB /* PaymentMethod.swift in Sources */,
 				CA6FEE902BDD246300D696DB /* TrendingCell.swift in Sources */,
 				CA6FEEA82BDD279400D696DB /* MovieListRow.swift in Sources */,
 				CA6FEE9B2BDD262200D696DB /* SingleMovieView.swift in Sources */,
+				CA6FEEDF2BDD3B4B00D696DB /* LoadingView.swift in Sources */,
 				CA6FEEBB2BDD2D0300D696DB /* TicketDate.swift in Sources */,
 				CA6FEE962BDD249D00D696DB /* UpcomingCell.swift in Sources */,
 				CA6FEEB52BDD2C1400D696DB /* ChairView.swift in Sources */,
 				CA6FEEA62BDD277F00D696DB /* MovieListView.swift in Sources */,
 				CA6FEEBF2BDD2DF100D696DB /* DateExt.swift in Sources */,
+				CA6FEED12BDD377900D696DB /* BottomTicketView.swift in Sources */,
+				CA6FEEE52BDD3D8500D696DB /* NotificationCenterExt.swift in Sources */,
 				CA0FC3182BDD214700647BB0 /* ContentView.swift in Sources */,
 				CA6FEEA02BDD269700D696DB /* LCButton.swift in Sources */,
 				CA6FEE942BDD248A00D696DB /* ActorCell.swift in Sources */,
+				CA6FEEC92BDD370700D696DB /* Ticket.swift in Sources */,
+				CA6FEEE32BDD3C7F00D696DB /* AnyTransitionExt.swift in Sources */,
 				CA6FEEB72BDD2C5C00D696DB /* ChairLegend.swift in Sources */,
 				CA6FEE8B2BDD240C00D696DB /* MovieViewModel.swift in Sources */,
+				CA6FEEDD2BDD3B3B00D696DB /* OkView.swift in Sources */,
 				CA6FEEA42BDD275900D696DB /* ActorDetailView.swift in Sources */,
+				CA6FEED32BDD378900D696DB /* DashedSeperator.swift in Sources */,
 				CA6FEEBD2BDD2DC900D696DB /* DateTimeView.swift in Sources */,
 				CA6FEEB92BDD2CD700D696DB /* SeatsChoiceView.swift in Sources */,
 				CA6FEEB02BDD2B8E00D696DB /* Seat.swift in Sources */,
@@ -682,11 +741,16 @@
 				CA6FEEC32BDD2E5500D696DB /* DateShape.swift in Sources */,
 				CA0FC3162BDD214700647BB0 /* AMtimeApp.swift in Sources */,
 				CA6FEE982BDD24B300D696DB /* HeaderView.swift in Sources */,
+				CA6FEECF2BDD376E00D696DB /* TicketDetailView.swift in Sources */,
+				CA6FEED52BDD379600D696DB /* TicketShape.swift in Sources */,
 				CA6FEEAA2BDD27BB00D696DB /* ActorListView.swift in Sources */,
 				CA6FEEB32BDD2BA300D696DB /* ScreenShape.swift in Sources */,
+				CA6FEECB2BDD373300D696DB /* TicketView.swift in Sources */,
+				CA6FEED72BDD396600D696DB /* PaymentView.swift in Sources */,
 				CA6FEE882BDD23CA00D696DB /* ModelBundle.swift in Sources */,
 				CA6FEE8E2BDD245100D696DB /* MovieCollectionView.swift in Sources */,
 				CA6FEE922BDD247400D696DB /* PopularCell.swift in Sources */,
+				CA6FEEE12BDD3B6C00D696DB /* OkShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
