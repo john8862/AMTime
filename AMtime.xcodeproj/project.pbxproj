@@ -74,6 +74,14 @@
 		CA6FEE802BDD226700D696DB /* uncutgems.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA6FEE452BDD226700D696DB /* uncutgems.jpg */; };
 		CA6FEE812BDD226700D696DB /* underwater_land.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA6FEE462BDD226700D696DB /* underwater_land.jpg */; };
 		CA6FEE822BDD226700D696DB /* underwater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA6FEE472BDD226700D696DB /* underwater.jpg */; };
+		CA6FEE882BDD23CA00D696DB /* ModelBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEE872BDD23C900D696DB /* ModelBundle.swift */; };
+		CA6FEE8B2BDD240C00D696DB /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEE8A2BDD240C00D696DB /* MovieViewModel.swift */; };
+		CA6FEE8E2BDD245100D696DB /* MovieCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEE8D2BDD245100D696DB /* MovieCollectionView.swift */; };
+		CA6FEE902BDD246300D696DB /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEE8F2BDD246300D696DB /* TrendingCell.swift */; };
+		CA6FEE922BDD247400D696DB /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEE912BDD247400D696DB /* PopularCell.swift */; };
+		CA6FEE942BDD248A00D696DB /* ActorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEE932BDD248A00D696DB /* ActorCell.swift */; };
+		CA6FEE962BDD249D00D696DB /* UpcomingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEE952BDD249D00D696DB /* UpcomingCell.swift */; };
+		CA6FEE982BDD24B300D696DB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEE972BDD24B300D696DB /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +172,14 @@
 		CA6FEE452BDD226700D696DB /* uncutgems.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uncutgems.jpg; sourceTree = "<group>"; };
 		CA6FEE462BDD226700D696DB /* underwater_land.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = underwater_land.jpg; sourceTree = "<group>"; };
 		CA6FEE472BDD226700D696DB /* underwater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = underwater.jpg; sourceTree = "<group>"; };
+		CA6FEE872BDD23C900D696DB /* ModelBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelBundle.swift; sourceTree = "<group>"; };
+		CA6FEE8A2BDD240C00D696DB /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		CA6FEE8D2BDD245100D696DB /* MovieCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionView.swift; sourceTree = "<group>"; };
+		CA6FEE8F2BDD246300D696DB /* TrendingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
+		CA6FEE912BDD247400D696DB /* PopularCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
+		CA6FEE932BDD248A00D696DB /* ActorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActorCell.swift; sourceTree = "<group>"; };
+		CA6FEE952BDD249D00D696DB /* UpcomingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingCell.swift; sourceTree = "<group>"; };
+		CA6FEE972BDD24B300D696DB /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +230,9 @@
 		CA0FC3142BDD214700647BB0 /* AMtime */ = {
 			isa = PBXGroup;
 			children = (
+				CA6FEE8C2BDD243600D696DB /* UIKit */,
+				CA6FEE892BDD23FC00D696DB /* ViewModel */,
+				CA6FEE862BDD23B900D696DB /* Models */,
 				CA6FEE482BDD226700D696DB /* Images */,
 				CA6FEE0C2BDD225F00D696DB /* Data */,
 				CA6FEE092BDD225600D696DB /* Extensions */,
@@ -329,6 +348,35 @@
 				CA6FEE472BDD226700D696DB /* underwater.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		CA6FEE862BDD23B900D696DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA6FEE872BDD23C900D696DB /* ModelBundle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA6FEE892BDD23FC00D696DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA6FEE8A2BDD240C00D696DB /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA6FEE8C2BDD243600D696DB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CA6FEE972BDD24B300D696DB /* HeaderView.swift */,
+				CA6FEE952BDD249D00D696DB /* UpcomingCell.swift */,
+				CA6FEE932BDD248A00D696DB /* ActorCell.swift */,
+				CA6FEE912BDD247400D696DB /* PopularCell.swift */,
+				CA6FEE8F2BDD246300D696DB /* TrendingCell.swift */,
+				CA6FEE8D2BDD245100D696DB /* MovieCollectionView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -520,9 +568,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6FEE902BDD246300D696DB /* TrendingCell.swift in Sources */,
+				CA6FEE962BDD249D00D696DB /* UpcomingCell.swift in Sources */,
 				CA0FC3182BDD214700647BB0 /* ContentView.swift in Sources */,
+				CA6FEE942BDD248A00D696DB /* ActorCell.swift in Sources */,
+				CA6FEE8B2BDD240C00D696DB /* MovieViewModel.swift in Sources */,
 				CA6FEE0A2BDD225600D696DB /* ColorExt.swift in Sources */,
 				CA0FC3162BDD214700647BB0 /* AMtimeApp.swift in Sources */,
+				CA6FEE982BDD24B300D696DB /* HeaderView.swift in Sources */,
+				CA6FEE882BDD23CA00D696DB /* ModelBundle.swift in Sources */,
+				CA6FEE8E2BDD245100D696DB /* MovieCollectionView.swift in Sources */,
+				CA6FEE922BDD247400D696DB /* PopularCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var model = MovieViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            let movieCollectionView = createCollectionView().edgesIgnoringSafeArea(.all).navigationBarTitle("Movies")
+
+            return NavigationView {
+                movieCollectionView
+            }
         }
         .padding()
     }
+    
+    fileprivate func createCollectionView() -> MovieCollectionView {
+            return MovieCollectionView(allItems: model.allItems, didSelectItem: { indexPath in }, seeAllforSection: { section in })
+        }
 }
 
 #Preview {
