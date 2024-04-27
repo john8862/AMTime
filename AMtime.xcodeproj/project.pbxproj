@@ -91,6 +91,18 @@
 		CA6FEEA82BDD279400D696DB /* MovieListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEA72BDD279400D696DB /* MovieListRow.swift */; };
 		CA6FEEAA2BDD27BB00D696DB /* ActorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEA92BDD27BB00D696DB /* ActorListView.swift */; };
 		CA6FEEAC2BDD27CB00D696DB /* ActorListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEAB2BDD27CB00D696DB /* ActorListRow.swift */; };
+		CA6FEEAE2BDD2B7700D696DB /* TheatreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEAD2BDD2B7700D696DB /* TheatreView.swift */; };
+		CA6FEEB02BDD2B8E00D696DB /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEAF2BDD2B8E00D696DB /* Seat.swift */; };
+		CA6FEEB32BDD2BA300D696DB /* ScreenShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEB22BDD2BA300D696DB /* ScreenShape.swift */; };
+		CA6FEEB52BDD2C1400D696DB /* ChairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEB42BDD2C1400D696DB /* ChairView.swift */; };
+		CA6FEEB72BDD2C5C00D696DB /* ChairLegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEB62BDD2C5C00D696DB /* ChairLegend.swift */; };
+		CA6FEEB92BDD2CD700D696DB /* SeatsChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEB82BDD2CD700D696DB /* SeatsChoiceView.swift */; };
+		CA6FEEBB2BDD2D0300D696DB /* TicketDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEBA2BDD2D0300D696DB /* TicketDate.swift */; };
+		CA6FEEBD2BDD2DC900D696DB /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEBC2BDD2DC900D696DB /* DateTimeView.swift */; };
+		CA6FEEBF2BDD2DF100D696DB /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEBE2BDD2DF100D696DB /* DateExt.swift */; };
+		CA6FEEC12BDD2E2F00D696DB /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEC02BDD2E2F00D696DB /* DateView.swift */; };
+		CA6FEEC32BDD2E5500D696DB /* DateShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEC22BDD2E5500D696DB /* DateShape.swift */; };
+		CA6FEEC52BDD2EB100D696DB /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEC42BDD2EB100D696DB /* TimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +210,18 @@
 		CA6FEEA72BDD279400D696DB /* MovieListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListRow.swift; sourceTree = "<group>"; };
 		CA6FEEA92BDD27BB00D696DB /* ActorListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActorListView.swift; sourceTree = "<group>"; };
 		CA6FEEAB2BDD27CB00D696DB /* ActorListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActorListRow.swift; sourceTree = "<group>"; };
+		CA6FEEAD2BDD2B7700D696DB /* TheatreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheatreView.swift; sourceTree = "<group>"; };
+		CA6FEEAF2BDD2B8E00D696DB /* Seat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
+		CA6FEEB22BDD2BA300D696DB /* ScreenShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenShape.swift; sourceTree = "<group>"; };
+		CA6FEEB42BDD2C1400D696DB /* ChairView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChairView.swift; sourceTree = "<group>"; };
+		CA6FEEB62BDD2C5C00D696DB /* ChairLegend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChairLegend.swift; sourceTree = "<group>"; };
+		CA6FEEB82BDD2CD700D696DB /* SeatsChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsChoiceView.swift; sourceTree = "<group>"; };
+		CA6FEEBA2BDD2D0300D696DB /* TicketDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDate.swift; sourceTree = "<group>"; };
+		CA6FEEBC2BDD2DC900D696DB /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
+		CA6FEEBE2BDD2DF100D696DB /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		CA6FEEC02BDD2E2F00D696DB /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		CA6FEEC22BDD2E5500D696DB /* DateShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateShape.swift; sourceTree = "<group>"; };
+		CA6FEEC42BDD2EB100D696DB /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +272,7 @@
 		CA0FC3142BDD214700647BB0 /* AMtime */ = {
 			isa = PBXGroup;
 			children = (
+				CA6FEEB12BDD2B9800D696DB /* Shape */,
 				CA6FEE9C2BDD266000D696DB /* Views */,
 				CA6FEE992BDD260900D696DB /* Screens */,
 				CA6FEE8C2BDD243600D696DB /* UIKit */,
@@ -293,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				CA6FEE082BDD225600D696DB /* ColorExt.swift */,
+				CA6FEEBE2BDD2DF100D696DB /* DateExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -374,6 +400,8 @@
 			isa = PBXGroup;
 			children = (
 				CA6FEE872BDD23C900D696DB /* ModelBundle.swift */,
+				CA6FEEAF2BDD2B8E00D696DB /* Seat.swift */,
+				CA6FEEBA2BDD2D0300D696DB /* TicketDate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -406,6 +434,7 @@
 				CA6FEEA32BDD275900D696DB /* ActorDetailView.swift */,
 				CA6FEEA52BDD277F00D696DB /* MovieListView.swift */,
 				CA6FEEA92BDD27BB00D696DB /* ActorListView.swift */,
+				CA6FEEB82BDD2CD700D696DB /* SeatsChoiceView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -418,8 +447,23 @@
 				CA6FEEA12BDD26A300D696DB /* LineRatingView.swift */,
 				CA6FEEA72BDD279400D696DB /* MovieListRow.swift */,
 				CA6FEEAB2BDD27CB00D696DB /* ActorListRow.swift */,
+				CA6FEEAD2BDD2B7700D696DB /* TheatreView.swift */,
+				CA6FEEB42BDD2C1400D696DB /* ChairView.swift */,
+				CA6FEEB62BDD2C5C00D696DB /* ChairLegend.swift */,
+				CA6FEEBC2BDD2DC900D696DB /* DateTimeView.swift */,
+				CA6FEEC02BDD2E2F00D696DB /* DateView.swift */,
+				CA6FEEC42BDD2EB100D696DB /* TimeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CA6FEEB12BDD2B9800D696DB /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				CA6FEEB22BDD2BA300D696DB /* ScreenShape.swift */,
+				CA6FEEC22BDD2E5500D696DB /* DateShape.swift */,
+			);
+			path = Shape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -611,23 +655,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6FEEC12BDD2E2F00D696DB /* DateView.swift in Sources */,
 				CA6FEE902BDD246300D696DB /* TrendingCell.swift in Sources */,
 				CA6FEEA82BDD279400D696DB /* MovieListRow.swift in Sources */,
 				CA6FEE9B2BDD262200D696DB /* SingleMovieView.swift in Sources */,
+				CA6FEEBB2BDD2D0300D696DB /* TicketDate.swift in Sources */,
 				CA6FEE962BDD249D00D696DB /* UpcomingCell.swift in Sources */,
+				CA6FEEB52BDD2C1400D696DB /* ChairView.swift in Sources */,
 				CA6FEEA62BDD277F00D696DB /* MovieListView.swift in Sources */,
+				CA6FEEBF2BDD2DF100D696DB /* DateExt.swift in Sources */,
 				CA0FC3182BDD214700647BB0 /* ContentView.swift in Sources */,
 				CA6FEEA02BDD269700D696DB /* LCButton.swift in Sources */,
 				CA6FEE942BDD248A00D696DB /* ActorCell.swift in Sources */,
+				CA6FEEB72BDD2C5C00D696DB /* ChairLegend.swift in Sources */,
 				CA6FEE8B2BDD240C00D696DB /* MovieViewModel.swift in Sources */,
 				CA6FEEA42BDD275900D696DB /* ActorDetailView.swift in Sources */,
+				CA6FEEBD2BDD2DC900D696DB /* DateTimeView.swift in Sources */,
+				CA6FEEB92BDD2CD700D696DB /* SeatsChoiceView.swift in Sources */,
+				CA6FEEB02BDD2B8E00D696DB /* Seat.swift in Sources */,
 				CA6FEEAC2BDD27CB00D696DB /* ActorListRow.swift in Sources */,
+				CA6FEEC52BDD2EB100D696DB /* TimeView.swift in Sources */,
 				CA6FEE0A2BDD225600D696DB /* ColorExt.swift in Sources */,
 				CA6FEEA22BDD26A300D696DB /* LineRatingView.swift in Sources */,
 				CA6FEE9E2BDD267000D696DB /* MovieDetailView.swift in Sources */,
+				CA6FEEAE2BDD2B7700D696DB /* TheatreView.swift in Sources */,
+				CA6FEEC32BDD2E5500D696DB /* DateShape.swift in Sources */,
 				CA0FC3162BDD214700647BB0 /* AMtimeApp.swift in Sources */,
 				CA6FEE982BDD24B300D696DB /* HeaderView.swift in Sources */,
 				CA6FEEAA2BDD27BB00D696DB /* ActorListView.swift in Sources */,
+				CA6FEEB32BDD2BA300D696DB /* ScreenShape.swift in Sources */,
 				CA6FEE882BDD23CA00D696DB /* ModelBundle.swift in Sources */,
 				CA6FEE8E2BDD245100D696DB /* MovieCollectionView.swift in Sources */,
 				CA6FEE922BDD247400D696DB /* PopularCell.swift in Sources */,
