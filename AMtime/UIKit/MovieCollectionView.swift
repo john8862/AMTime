@@ -91,6 +91,10 @@ struct MovieCollectionView: UIViewRepresentable {
                  return UICollectionReusableView()
             }
         }
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            parent.didSelectItem(indexPath)
+        }
 
         func createCompositionalLayout() -> UICollectionViewLayout {
             let layout = UICollectionViewCompositionalLayout { [weak self] index, _ in
