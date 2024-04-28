@@ -28,7 +28,7 @@ struct SeatsChoiceView: View {
                             self.showPopup = !self.validateInputs()
                         }
                     }).sheet(isPresented: self.$showBasket) {
-                        BasketView(ticket: Ticket(id: UUID(), movie: self.movie, date: self.date, hour: self.hour), selectedSeats: self.selectedSeats
+                        BasketView(ticket: Ticket(id: UUID(), movie: self.movie, date: self.date, hour: self.hour), selectedSeats: self.$selectedSeats
                         )
                     }.padding()
                 }.navigationBarTitle("Choose seats", displayMode: .large)

@@ -8,6 +8,7 @@
 import Foundation
 
 struct TicketDate: Equatable {
+    var id = UUID()
     var day: String
     var month: String
     var year: String

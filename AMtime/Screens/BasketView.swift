@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BasketView: View {
     var ticket: Ticket
-    var selectedSeats: [Seat]
+    @Binding var selectedSeats: [Seat]
     @State private var showPaymentScreen = false
 
     var body: some View {
@@ -36,11 +36,5 @@ struct BasketView: View {
     func renderTicket(_ ticket: Ticket, seat: Seat, angle: CGFloat) -> some View {
         return TicketView(ticket: ticket, seat: seat)
             .rotation3DEffect(Angle(degrees: Double(angle)), axis: (x: 0, y: 10.0, z: 0))
-    }
-}
-
-struct BasketView_Previews: PreviewProvider {
-    static var previews: some View {
-        BasketView(ticket: Ticket.default, selectedSeats: [])
     }
 }
