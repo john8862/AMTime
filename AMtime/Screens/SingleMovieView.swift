@@ -5,32 +5,28 @@
 //  Created by Sherlock Zhao on 27/4/2024.
 //
 
+import Kingfisher
 import SwiftUI
 
-struct SingleMovieView<T: Movie>: View {
-    var movie: T
+struct SingleMovieView: View {
+    var movieId: Int = -1
+
+    @ObservedObject var model = MovieListingViewModel()
 
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
                 createPosterImage()
-                MovieDetailView(movie: self.movie)
+                MovieDetailView(movie: self.model.movie)
             }
-        }
-        .edgesIgnoringSafeArea(.top)
+        }.edgesIgnoringSafeArea(.top)
+            .onAppear {
+                self.model.getMovieDetail(id: self.movieId)
+            }
     }
 
-    // Creates and styles the poster image view
     fileprivate func createPosterImage() -> some View {
-        Image(uiImage: UIImage(named: "\(movie.image).jpg") ?? UIImage())
-            .resizable()
+        return KFImage(source: .network(model.movie.posterUrl)).resizable()
             .aspectRatio(contentMode: .fit)
-    }
-}
-
-// Preview Provider
-struct SingleMovieView_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieDetailView<Popular>(movie: Popular.default)
     }
 }

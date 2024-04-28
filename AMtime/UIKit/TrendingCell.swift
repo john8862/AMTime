@@ -6,18 +6,19 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TrendingCell: UICollectionViewCell {
     // Static identifier for cell reuse
     static let reuseId: String = "TrendingCell"
 
     // Optional trending data model
-    var trending: Trending? {
+    var movie: MovieViewModel? {
         didSet {
-            // Update cell content when trending data changes
-            if let trending = self.trending {
-                imageView.image = UIImage(named: "\(trending.image)_land.jpg")
-                titleLabel.text = trending.title
+            if let movie = self.movie {
+                // This line use kingFisher to download, set the image to the image view and caching it at the same time
+                imageView.kf.setImage(with: movie.backdropUrl)
+                titleLabel.text = movie.title
             }
         }
     }

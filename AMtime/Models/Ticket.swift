@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Ticket<T: Movie>: Identifiable {
+struct Ticket: Identifiable {
     var id: UUID
-    var movie: T
+    var movie: MovieViewModel
     var date: TicketDate
     var hour: String
 
-    static var `default`: Ticket<Popular> {
-        .init(id: UUID(), movie: Popular.default, date: TicketDate.default, hour: "")
+    static var `default`: Ticket {
+        .init(id: UUID(), movie: MovieViewModel.default, date: TicketDate.default, hour: "")
     }
 }

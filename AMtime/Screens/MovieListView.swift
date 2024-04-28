@@ -7,21 +7,31 @@
 
 import SwiftUI
 
-struct MovieListView<T: Movie>: View {
-    var movies: [T]
+struct MovieListView: View {
     var section: HomeSection
+    @ObservedObject var model = MovieListingViewModel()
+    @State private var page: Int = 1
 
     var body: some View {
         NavigationView {
-            List(0 ..< movies.count) { i in
-                MovieListRow<T>(movie: self.movies[i])
+            List {
+                ForEach(0 ..< model.paginatedMovies.count, id: \.self) { i in
+                    MovieListRow(movie: self.model.paginatedMovies[i]).onAppear {
+                        if i == self.model.paginatedMovies.count - 1 {
+                            self.page += 1
+                            self.model.getPaginatedMovies(for: self.section, page: self.page)
+                        }
+                    }
+                }
             }.navigationBarTitle(section.rawValue)
+        }.onAppear {
+            self.model.getPaginatedMovies(for: self.section, page: self.page)
         }
     }
 }
 
 struct MovieListView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieListView<Popular>(movies: [], section: .Trending)
+        MovieListView(section: .TopRated)
     }
 }

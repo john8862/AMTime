@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MovieCollectionView: UIViewRepresentable {
-    var allItems: [HomeSection: [Codable]]
+    var allItems: [HomeSection: [MovieViewModel]]
     var didSelectItem: ((_ indexPath: IndexPath) -> Void) = { _ in }
     var seeAllforSection: ((_ section: HomeSection) -> Void) = { _ in }
 
@@ -18,7 +18,6 @@ struct MovieCollectionView: UIViewRepresentable {
         collectionView.register(TrendingCell.self, forCellWithReuseIdentifier: TrendingCell.reuseId)
         collectionView.register(PopularCell.self, forCellWithReuseIdentifier: PopularCell.reuseId)
         collectionView.register(UpcomingCell.self, forCellWithReuseIdentifier: UpcomingCell.reuseId)
-        collectionView.register(ActorCell.self, forCellWithReuseIdentifier: ActorCell.reuseId)
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderView.reuseId)
         collectionView.dataSource = context.coordinator
         collectionView.delegate = context.coordinator
@@ -54,44 +53,43 @@ struct MovieCollectionView: UIViewRepresentable {
             switch indexPath.section {
             case 0:
                 if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrendingCell.reuseId, for: indexPath) as? TrendingCell {
-                    cell.trending = parent.allItems[HomeSection.Trending]?[indexPath.item] as? Trending
+                    cell.movie = parent.allItems[.NowPlaying]?[indexPath.item]
                     return cell
                 }
             case 1:
                 if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularCell.reuseId, for: indexPath) as? PopularCell {
-                    cell.popular = parent.allItems[HomeSection.Popular]?[indexPath.item] as? Popular
+                    cell.movie = parent.allItems[.Popular]?[indexPath.item]
                     return cell
                 }
 
             case 2:
                 if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCell.reuseId, for: indexPath) as? UpcomingCell {
-                    cell.upcoming = parent.allItems[HomeSection.Upcoming]?[indexPath.item] as? Upcoming
+                    cell.movie = parent.allItems[.Upcoming]?[indexPath.item]
                     return cell
                 }
             default:
-                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ActorCell.reuseId, for: indexPath) as? ActorCell {
-                    cell.actor = parent.allItems[HomeSection.Actors]?[indexPath.item] as? Actor
+                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularCell.reuseId, for: indexPath) as? PopularCell {
+                    cell.movie = parent.allItems[.TopRated]?[indexPath.item]
                     return cell
                 }
             }
             return UICollectionViewCell()
         }
-        
-        
+
         func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
             switch kind {
             case UICollectionView.elementKindSectionHeader:
-            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderView.reuseId, for: indexPath) as? HeaderView else { return UICollectionReusableView() }
-                header.name.text =  HomeSection.allCases[indexPath.section].rawValue
+                guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderView.reuseId, for: indexPath) as? HeaderView else { return UICollectionReusableView() }
+                header.name.text = HomeSection.allCases[indexPath.section].rawValue
                 header.onSeeAllClicked = { [weak self] in
                     self?.parent.seeAllforSection(HomeSection.allCases[indexPath.section])
                 }
                 return header
             default:
-                 return UICollectionReusableView()
+                return UICollectionReusableView()
             }
         }
-        
+
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             parent.didSelectItem(indexPath)
         }
@@ -158,23 +156,5 @@ struct MovieCollectionView: UIViewRepresentable {
     }
 }
 
-//MARK: - Preview function
-struct MovieCollectionViewPreview: View {
-    // Sample data for the preview
-    let sampleData: [HomeSection: [Codable]] = [
-        .Trending: [Trending.default],
-        .Popular: [Popular.default],
-        .Upcoming: [Upcoming.default],
-        .Actors: [Actor.default]
-    ]
+// MARK: - Preview function
 
-    var body: some View {
-        MovieCollectionView(allItems: sampleData)
-    }
-}
-
-struct MovieCollectionViewPreview_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieCollectionViewPreview()
-    }
-}

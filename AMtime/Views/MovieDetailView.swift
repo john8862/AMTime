@@ -7,26 +7,23 @@
 
 import SwiftUI
 
-struct MovieDetailView<T: Movie>: View {
-    var movie: T
+struct MovieDetailView: View {
+    var movie: MovieViewModel
 
     @State private var showSeats: Bool = false
 
     var body: some View {
-        VStack(alignment: .leading) {
+        return VStack(alignment: .leading) {
             createTitle()
-            LineRatingView(value: movie.rating)
+            LineRatingView(value: movie.voteAverage)
             createGenreList()
-
             HStack {
                 Text(self.movie.releaseDate).foregroundColor(Color.gray)
                 Spacer()
                 Text(self.movie.runtime).foregroundColor(Color.gray)
             }.padding(.vertical)
-
             createDescription()
             createChooseSeatButton()
-
         }.padding(.horizontal).padding(.bottom, 20)
     }
 
@@ -39,7 +36,7 @@ struct MovieDetailView<T: Movie>: View {
     }
 
     fileprivate func createGenreList() -> some View {
-        return ScrollView(.horizontal) {
+        return ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(self.movie.genres, id: \.self) { genre in
                     Text(genre)
@@ -54,7 +51,7 @@ struct MovieDetailView<T: Movie>: View {
     }
 
     fileprivate func createDescription() -> some View {
-        return Text(movie.description).lineLimit(nil).font(.body)
+        return Text(movie.overview).lineLimit(nil).font(.body)
     }
 
     fileprivate func createChooseSeatButton() -> some View {
@@ -63,11 +60,5 @@ struct MovieDetailView<T: Movie>: View {
         }.sheet(isPresented: $showSeats) {
             SeatsChoiceView(movie: self.movie)
         }.padding(.vertical)
-    }
-}
-
-struct MovieDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieDetailView<Popular>(movie: Popular.default)
     }
 }

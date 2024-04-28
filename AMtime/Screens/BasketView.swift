@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct BasketView<T: Movie>: View {
-    var ticket: Ticket<T>
+struct BasketView: View {
+    var ticket: Ticket
     var selectedSeats: [Seat]
     @State private var showPaymentScreen = false
 
@@ -25,15 +25,15 @@ struct BasketView<T: Movie>: View {
                     }
                 }
                 LCButton(text: "Buy", action: { self.showPaymentScreen.toggle() })
-                    .padding(.horizontal)
-                    .padding(.bottom)
                     .sheet(isPresented: self.$showPaymentScreen, content: {
                         PaymentView()
                     })
+                    .padding(.horizontal)
+                    .padding(.bottom)
             }
     }
 
-    func renderTicket(_ ticket: Ticket<T>, seat: Seat, angle: CGFloat) -> some View {
+    func renderTicket(_ ticket: Ticket, seat: Seat, angle: CGFloat) -> some View {
         return TicketView(ticket: ticket, seat: seat)
             .rotation3DEffect(Angle(degrees: Double(angle)), axis: (x: 0, y: 10.0, z: 0))
     }
@@ -41,6 +41,6 @@ struct BasketView<T: Movie>: View {
 
 struct BasketView_Previews: PreviewProvider {
     static var previews: some View {
-        BasketView(ticket: Ticket<Popular>.default, selectedSeats: [])
+        BasketView(ticket: Ticket.default, selectedSeats: [])
     }
 }

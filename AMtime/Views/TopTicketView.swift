@@ -5,16 +5,17 @@
 //  Created by Sherlock Zhao on 27/4/2024.
 //
 
+import Kingfisher
 import SwiftUI
 
-struct TopTicketView<T: Movie>: View {
-    var ticket: Ticket<T>
+struct TopTicketView: View {
+    var ticket: Ticket
     var seat = Seat.default
 
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
-                Text(ticket.movie.studio ?? "Unknown")
+                Text(ticket.movie.productionCompany) // Change here
                     .font(.system(size: 20, weight: .bold))
                     .foregroundColor(Color.gray)
                 Text(ticket.movie.title)
@@ -23,7 +24,7 @@ struct TopTicketView<T: Movie>: View {
                 .padding(.top, 30)
                 .padding(.horizontal)
 
-            Image(uiImage: UIImage(named: "\(ticket.movie.image)_land.jpg")!)
+            KFImage(source: .network(ticket.movie.backdropUrl))
                 .resizable().frame(minWidth: 0.0, maxWidth: .infinity)
                 .scaledToFit()
 
@@ -38,6 +39,6 @@ struct TopTicketView<T: Movie>: View {
 
 struct TopTicketView_Previews: PreviewProvider {
     static var previews: some View {
-        TopTicketView(ticket: Ticket<Popular>.default)
+        TopTicketView(ticket: Ticket.default)
     }
 }
