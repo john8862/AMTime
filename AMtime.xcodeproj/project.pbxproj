@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AE3BE82BDFDDFA00C68CBF /* DynamicContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE3BE72BDFDDFA00C68CBF /* DynamicContainer.swift */; };
+		04AE3BEA2BDFDE4500C68CBF /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE3BE92BDFDE4500C68CBF /* SectionView.swift */; };
 		1C9E85C12BDFD616004BB631 /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E85C02BDFD616004BB631 /* NowPlayingView.swift */; };
 		1C9E85C32BDFD62E004BB631 /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E85C22BDFD62E004BB631 /* PopularView.swift */; };
 		1C9E85C52BDFD642004BB631 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E85C42BDFD642004BB631 /* UpcomingView.swift */; };
@@ -142,6 +144,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04AE3BE72BDFDDFA00C68CBF /* DynamicContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContainer.swift; sourceTree = "<group>"; };
+		04AE3BE92BDFDE4500C68CBF /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		1C9E85C02BDFD616004BB631 /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
 		1C9E85C22BDFD62E004BB631 /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
 		1C9E85C42BDFD642004BB631 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
@@ -514,6 +518,8 @@
 				CA6FEEDA2BDD3A1700D696DB /* LCTextfield.swift */,
 				CA6FEEDC2BDD3B3B00D696DB /* OkView.swift */,
 				CA6FEEDE2BDD3B4B00D696DB /* LoadingView.swift */,
+				04AE3BE72BDFDDFA00C68CBF /* DynamicContainer.swift */,
+				04AE3BE92BDFDE4500C68CBF /* SectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -741,6 +747,7 @@
 				CA6FEED92BDD39A400D696DB /* PaymentMethod.swift in Sources */,
 				CA6FEE902BDD246300D696DB /* TrendingCell.swift in Sources */,
 				CA6FEEA82BDD279400D696DB /* MovieListRow.swift in Sources */,
+				04AE3BEA2BDFDE4500C68CBF /* SectionView.swift in Sources */,
 				CA6FEE9B2BDD262200D696DB /* SingleMovieView.swift in Sources */,
 				CA6FEEDF2BDD3B4B00D696DB /* LoadingView.swift in Sources */,
 				CA6FEEBB2BDD2D0300D696DB /* TicketDate.swift in Sources */,
@@ -753,6 +760,7 @@
 				CA0FC3182BDD214700647BB0 /* ContentView.swift in Sources */,
 				1C9E85C12BDFD616004BB631 /* NowPlayingView.swift in Sources */,
 				CA6FEEA02BDD269700D696DB /* LCButton.swift in Sources */,
+				04AE3BE82BDFDDFA00C68CBF /* DynamicContainer.swift in Sources */,
 				CA6FEEC92BDD370700D696DB /* Ticket.swift in Sources */,
 				CA6FEEE32BDD3C7F00D696DB /* AnyTransitionExt.swift in Sources */,
 				1C9E85C52BDFD642004BB631 /* UpcomingView.swift in Sources */,
