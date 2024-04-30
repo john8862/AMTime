@@ -18,12 +18,14 @@ struct PopularView: View {
                 .cornerRadius(20)
                 .clipped()
                 .padding(.top, 5)
+                .frame(height: 260)
 
-            Text("Star wars: The rise of skywalker")
+            Text(movie.title)
                 .font(.headline)
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.all, 10)
+                .truncationMode(.tail)
         }
     }
 }

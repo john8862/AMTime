@@ -16,9 +16,13 @@ struct UpcomingView: View {
             KFImage(source: .network(movie.backdropUrl)).resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(10.0)
+                .frame(width:220)
 
             VStack(alignment: .leading) {
-                Text("Spies in disguise").font(.title).bold()
+                Text(movie.title)
+                    .font(.title)
+                    .bold()
+                    .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                 Text(movie.releaseDate)
                     .foregroundColor(.gray)
             }
