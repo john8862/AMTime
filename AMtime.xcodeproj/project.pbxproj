@@ -60,6 +60,7 @@
 		CA6FEEEC2BDDE76D00D696DB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEEB2BDDE76D00D696DB /* WebService.swift */; };
 		CA6FEEEE2BDDEAE800D696DB /* MovieListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FEEED2BDDEAE800D696DB /* MovieListingViewModel.swift */; };
 		CA6FEEF12BDDEBDB00D696DB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CA6FEEF02BDDEBDB00D696DB /* Kingfisher */; };
+		CAFCC1A02BE1B1AC0099CEE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CAFCC19F2BE1B1AC0099CEE8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		CA6FEEE82BDDE6C900D696DB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CA6FEEEB2BDDE76D00D696DB /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		CA6FEEED2BDDEAE800D696DB /* MovieListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListingViewModel.swift; sourceTree = "<group>"; };
+		CAFCC19F2BE1B1AC0099CEE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		CA0FC3092BDD214700647BB0 = {
 			isa = PBXGroup;
 			children = (
+				CAFCC19F2BE1B1AC0099CEE8 /* README.md */,
 				CA0FC3142BDD214700647BB0 /* AMtime */,
 				CA0FC3252BDD214800647BB0 /* AMtimeTests */,
 				CA0FC32F2BDD214800647BB0 /* AMtimeUITests */,
@@ -438,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFCC1A02BE1B1AC0099CEE8 /* README.md in Resources */,
 				CA0FC31D2BDD214800647BB0 /* Preview Assets.xcassets in Resources */,
 				CA0FC31A2BDD214800647BB0 /* Assets.xcassets in Resources */,
 			);
