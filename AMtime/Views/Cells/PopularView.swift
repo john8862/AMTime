@@ -25,6 +25,7 @@ struct PopularView: View {
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.all, 10)
+                .frame(height: 50)
                 .truncationMode(.tail)
         }
     }
